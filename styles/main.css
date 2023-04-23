@@ -54,6 +54,10 @@ header{
     background-size: cover;
     border-top: 4px solid black;
 }
+.section2__container{
+    width: 90%;
+    margin: 0 auto;
+}
 .section2__h2{
     height: 10px;
 }
@@ -69,15 +73,12 @@ header{
     justify-content: space-between;
 }
 .section2__description_shop{
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4em;
-}
-.section2__description_shop h2{
-    /* padding: 24% 0 0 10%; */
 }
 .section2__description_shop img {
     /* padding: 14% 0 0 54%; */
@@ -91,10 +92,11 @@ header{
 }
 .section2__description_cards{
     display: flex;
-    width: 60%;
+    width: 70%;
     flex-wrap: wrap;
     gap: 1em;
-    margin: 3em 0 0 1em;
+    justify-content: space-between;
+    /* margin: 3em 0 0 1em; */
     border-radius: 1em;
     /* margin-left: 46%; */
 }
@@ -103,8 +105,39 @@ header{
     border-radius: 1em;
 }
 .section2__description_card p {
-    padding: 1em;
+    /* padding: 1em; */
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: white;
+}
+.section3{
+    border-top: 4px solid black;
+    background-image: url(../images/trainer-bg.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+.section3 h2{
+    text-align: center;
+    color: white;
+    font-family: 'Bruno Ace SC', cursive;
+    padding-top: 1em;
+    font-size: 2em;
+}
+.section3__container{
+    width: 90%;
+    height: 88%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section3__left{
+    width: 60%;
+}
+.section3__left p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+    line-height: 1.6em;
 }
