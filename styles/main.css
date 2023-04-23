@@ -1,117 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"); /*font-family: 'Bruno Ace SC', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); /*font-family: 'Roboto', sans-serif;*/
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-header {
-  width: 100%;
-  height: 80px;
-  background: rgb(255, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(7, 0, 120, 1) 100%
-  );
-}
-.header__container {
-  margin: 0 auto;
-  width: 80%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__container img {
-  cursor: pointer;
-  width: 3%;
-}
-#header__logo {
-  width: 6%;
-}
-.section1 {
-  width: 100%;
-  height: 90vh;
-  background-image: url(../images/bg-section1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.section1__container h1 {
-  text-align: center;
-  color: white;
-  font-family: "Bruno Ace SC", cursive;
-  font-size: 3rem;
-  padding: 16% 48% 0 0;
-  line-height: 2em;
-}
-.section1__container h1::after {
-  content: "!";
-  color: red;
-}
-.section2 {
-  width: 100%;
-  height: 90vh;
-  background-image: url(../images/bg-section2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: 4px solid black;
-}
-.section2__h2 {
-  height: 10px;
-}
-.section2__container h2 {
-  text-align: center;
-  color: white;
-  font-family: "Bruno Ace SC", cursive;
-  padding-top: 1em;
-  line-height: 1.6em;
-}
-.section2__description {
-  display: flex;
-  justify-content: space-between;
-}
-.section2__description_shop {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4em;
-}
-.section2__description_shop h2 {
-  /* padding: 24% 0 0 10%; */
-}
-.section2__description_shop img {
-  /* padding: 14% 0 0 54%; */
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.section2__description_shop img:hover {
-  transform: scale(1.2);
-}
-.section2__description_cards {
-  display: flex;
-  width: 60%;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin: 3em 0 0 1em;
-  border-radius: 1em;
-  /* margin-left: 46%; */
-}
-.section2__description_card {
-  width: 360px;
-  border-radius: 1em;
-}
-.section2__description_card p {
-  padding: 1em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  color: white;
-}
+
 .site-footer {
   border-top: 4px solid black;
   background: rgb(0, 0, 0);
@@ -159,4 +49,144 @@ header {
   height: 300px;
   border: none;
   border-radius: 10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(7,0,120,1) 100%);
+}
+.header__container{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__container img{
+    cursor: pointer;
+    width: 3%;
+}
+#header__logo{
+    width: 6%;
+}
+.section1{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/bg-section1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section1__container h1{
+    text-align: center;
+    color: white;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 3rem;
+    padding: 16% 48% 0 0;
+    line-height: 2em;
+}
+.section1__container h1::after{
+    content: "!";
+    color: red;
+}
+.section2{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/bg-section2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 4px solid black;
+}
+.section2__container{
+    width: 90%;
+    margin: 0 auto;
+}
+.section2__h2{
+    height: 10px;
+}
+.section2__container h2{
+    text-align: center;
+    color: white;
+    font-family: 'Bruno Ace SC', cursive;
+    padding-top: 1em;
+    line-height: 1.6em;
+}
+.section2__description{
+    display: flex;
+    justify-content: space-between;
+}
+.section2__description_shop{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+.section2__description_shop img {
+    /* padding: 14% 0 0 54%; */
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.section2__description_shop img:hover{
+    transform: scale(1.2);
+}
+.section2__description_cards{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    /* margin: 3em 0 0 1em; */
+    border-radius: 1em;
+    /* margin-left: 46%; */
+}
+.section2__description_card{
+    width: 360px;
+    border-radius: 1em;
+}
+.section2__description_card p {
+    /* padding: 1em; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.section3{
+    border-top: 4px solid black;
+    background-image: url(../images/trainer-bg.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+.section3 h2{
+    text-align: center;
+    color: white;
+    font-family: 'Bruno Ace SC', cursive;
+    padding-top: 1em;
+    font-size: 2em;
+}
+.section3__container{
+    width: 90%;
+    height: 88%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section3__left{
+    width: 60%;
+}
+.section3__left p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+    line-height: 1.6em;
 }
